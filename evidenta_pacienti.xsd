@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Definirea tipurilor de baza -->
+  <xs:simpleType name="varstaType">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="150"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="dozaType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+mg"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="frecventaType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="Zi de zi|O data la \d+ ore|O data la \d+ zile|O data la \d+ saptamani|O data la \d+ luni"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tip de baza pentru tratament -->
+  <xs:complexType name="tratamentBaseType">
+    <xs:sequence>
+      <xs:element ref="denumire"/>
+      <xs:element ref="doza"/>
+      <xs:element ref="frecventa"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Extensie a tipului de baza pentru tratament -->
+  <xs:complexType name="tratamentExtendedType">
+    <xs:complexContent>
+      <xs:extension base="tratamentBaseType">
+        <xs:sequence>
+          <xs:element name="observatii" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- Element principal pentru evidenta pacienti -->
+  <xs:element name="evidenta_pacienti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pacient" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Element pentru pacient -->
+  <xs:element name="pacient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nume"/>
+        <xs:element ref="varsta"/>
+        <xs:element ref="tratament" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Element tratament folosind tipul extins -->
+  <xs:element name="tratament" type="tratamentExtendedType"/>
+
+  <!-- Alte elemente -->
+  <xs:element name="nume" type="xs:string"/>
+  <xs:element name="varsta" type="varstaType"/>
+  <xs:element name="denumire" type="xs:string"/>
+  <xs:element name="doza" type="dozaType"/>
+  <xs:element name="frecventa" type="frecventaType"/>
+</xs:schema>

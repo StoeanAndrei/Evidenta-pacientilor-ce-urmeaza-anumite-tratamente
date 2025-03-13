@@ -1,0 +1,115 @@
+{
+    "evidenta_pacienti": {
+      "pacient": [
+        {
+          "@id": "id1",
+          "nume": "Ion Poenaru",
+          "varsta": "45",
+          "tratament": {
+            "denumire": "Antibiotic",
+            "doza": "500mg",
+            "frecventa": "Zi de zi"
+          }
+        },
+        {
+          "@id": "id2",
+          "nume": "Marian Cornel",
+          "varsta": "30",
+          "tratament": [
+            {
+              "denumire": "Analgezic",
+              "doza": "100mg",
+              "frecventa": "O data la 6 ore"
+            },
+            {
+              "denumire": "Antibiotic",
+              "doza": "550mg",
+              "frecventa": "O data la 12 ore"
+            }
+          ]
+        },
+        {
+          "@id": "id3",
+          "nume": "Liliana Cornel",
+          "varsta": "27",
+          "tratament": [
+            {
+              "denumire": "Ortopedic",
+              "doza": "120mg",
+              "frecventa": "O data la 12 ore"
+            },
+            {
+              "denumire": "Profilactic",
+              "doza": "60mg",
+              "frecventa": "O data pe zi"
+            }
+          ]
+        },
+        {
+          "@id": "id4",
+          "nume": "Mihai Ion",
+          "varsta": "55",
+          "tratament": {
+            "denumire": "Anticoagulant",
+            "doza": "5mg",
+            "frecventa": "Zi de zi"
+          }
+        },
+        {
+          "@id": "id5",
+          "nume": "Suzana Simion",
+          "varsta": "25",
+          "tratament": [
+            {
+              "denumire": "Antibiotic",
+              "doza": "250mg",
+              "frecventa": "O data la 8 ore"
+            },
+            {
+              "denumire": "Antiemetic",
+              "doza": "10mg",
+              "frecventa": "O data la 4 ore"
+            }
+          ]
+        },
+        {
+          "@id": "id6",
+          "nume": "Andrei Raducanu",
+          "varsta": "40",
+          "tratament": {
+            "denumire": "Antiinflamator",
+            "doza": "200mg",
+            "frecventa": "O data la 12 ore"
+          }
+        },
+        {
+          "@id": "id7",
+          "nume": "Maria Ionescu",
+          "varsta": "65",
+          "tratament": {
+            "denumire": "Antidiabetic",
+            "doza": "15mg",
+            "frecventa": "Zi de zi"
+          }
+        },
+        {
+          "@id": "id8",
+          "nume": "Mircea Ene",
+          "varsta": "55",
+          "tratament": [
+            {
+              "denumire": "Antihistaminic",
+              "doza": "50mg",
+              "frecventa": "O data la 24 ore"
+            },
+            {
+              "denumire": "Antibiotic",
+              "doza": "500mg",
+              "frecventa": "O data la 12 ore"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

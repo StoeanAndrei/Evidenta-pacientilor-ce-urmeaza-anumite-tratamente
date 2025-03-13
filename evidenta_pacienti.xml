@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE evidenta_pacienti SYSTEM "evidenta_pacienti.dtd">
+<evidenta_pacienti>
+    <pacient id="id1">
+        <nume>Ion Poenaru</nume>
+        <varsta>45</varsta>
+        <tratament>
+            <denumire>Antibiotic</denumire>
+            <doza>500mg</doza>
+            <frecventa>Zi de zi</frecventa>
+        </tratament>
+    </pacient>
+    <pacient id="id2">
+        <nume>Marian Cornel</nume>
+        <varsta>30</varsta>
+        <tratament>
+            <denumire>Analgezic</denumire>
+            <doza>100mg</doza>
+            <frecventa>O data la 6 ore</frecventa>
+        </tratament>
+        <tratament>
+            <denumire>Antibiotic</denumire>
+            <doza>550mg</doza>
+            <frecventa>O data la 12 ore</frecventa>
+        </tratament>
+    </pacient>
+    <pacient id="id3">
+        <nume>Liliana Cornel</nume>
+        <varsta>27</varsta>
+        <tratament>
+            <denumire>Ortopedic</denumire>
+            <doza>120mg</doza>
+            <frecventa>O data la 12 ore</frecventa>
+        </tratament>
+        <tratament>
+            <denumire>Profilactic</denumire>
+            <doza>60mg</doza>
+            <frecventa>O data pe zi</frecventa>
+        </tratament>
+    </pacient>
+    <pacient id="id4">
+        <nume>Mihai Ion</nume>
+        <varsta>55</varsta>
+        <tratament>
+            <denumire>Anticoagulant</denumire>
+            <doza>5mg</doza>
+            <frecventa>Zi de zi</frecventa>
+        </tratament>
+    </pacient>
+    <pacient id="id5">
+        <nume>Suzana Simion</nume>
+        <varsta>25</varsta>
+        <tratament>
+            <denumire>Antibiotic</denumire>
+            <doza>250mg</doza>
+            <frecventa>O data la 8 ore</frecventa>
+        </tratament>
+        <tratament>
+            <denumire>Antiemetic</denumire>
+            <doza>10mg</doza>
+            <frecventa>O data la 4 ore</frecventa>
+        </tratament>
+    </pacient>
+    <pacient id="id6">
+        <nume>Andrei Raducanu</nume>
+        <varsta>40</varsta>
+        <tratament>
+            <denumire>Antiinflamator</denumire>
+            <doza>200mg</doza>
+            <frecventa>O data la 12 ore</frecventa>
+        </tratament>
+    </pacient>
+    <pacient id="id7">
+        <nume>Maria Ionescu</nume>
+        <varsta>65</varsta>
+        <tratament>
+            <denumire>Antidiabetic</denumire>
+            <doza>15mg</doza>
+            <frecventa>Zi de zi</frecventa>
+        </tratament>
+    </pacient>
+    <pacient id="id8">
+        <nume>Mircea Ene</nume>
+        <varsta>55</varsta>
+        <tratament>
+            <denumire>Antihistaminic</denumire>
+            <doza>50mg</doza>
+            <frecventa>O data la 24 ore</frecventa>
+        </tratament>
+        <tratament>
+            <denumire>Antibiotic</denumire>
+            <doza>500mg</doza>
+            <frecventa>O data la 12 ore</frecventa>
+        </tratament>
+    </pacient>
+</evidenta_pacienti>
