@@ -1,0 +1,10 @@
+<!ELEMENT evidenta_pacienti (pacient+)>
+<!ELEMENT pacient (nume, varsta, tratament+)>
+<!ATTLIST pacient id ID #REQUIRED>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT tratament (denumire, doza, frecventa)>
+<!ELEMENT denumire (#PCDATA)>
+<!ELEMENT doza (#PCDATA)>
+<!ELEMENT frecventa (#PCDATA)>
+
